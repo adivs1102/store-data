@@ -15,7 +15,7 @@ const Form = () => {
     
     try {
       setText('scraping website... this may take a while');
-      const response = await axios.post('http://localhost:3000/upload/link', {link});
+      const response = await axios.post('http://13.235.81.79:3000/upload/link', {link});
       // console.log(response.data);
       setText(response.data);
     } catch (error) {
@@ -30,7 +30,7 @@ const Form = () => {
     formData.append('name', file.name);
     setText('fetching data...');
 
-    axios.post('http://localhost:3000/upload/file', formData,
+    axios.post('http://13.235.81.79:3000/upload/file', formData,
     ).then(res=>{
       console.log(res);
       setText(res.data);

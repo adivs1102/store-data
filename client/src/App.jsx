@@ -1,8 +1,6 @@
 // import { useState } from 'react'
 import './App.css'
-import Form from './Components/Form'
-import TestLink from './Components/TestLink'
-import TestFile from './Components/TestFile'  
+import Form from './Components/Form' 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -12,9 +10,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Form/>} />
-          <Route path="/testLink" element={<TestLink/>} />
-          <Route path="/testFile" element={<TestFile/>} />
-          
           </Routes>
       </BrowserRouter>
     </>
